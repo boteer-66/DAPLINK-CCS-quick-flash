@@ -34,4 +34,3 @@ if %ERRORLEVEL% EQU 0 (
     echo [FAIL] Check wiring
     pause
 )
-

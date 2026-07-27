@@ -22,7 +22,7 @@ CCS Theia + DAPLink + OpenOCD 零元烧录 MSPM0G3507 最小核心板。
 ## 快速开始
 
 1. 把 `flash.bat` 放到你所有工程的**根目录**（如 `D:\TI`）
-2. （可选）把该目录加入系统 PATH——以后任何位置直接敲 `flash`
+2. （可选）把该目录加入系统 PATH——以后任何项目里都可直接在终端敲 `flash` 烧录
 3. CCS 点锤子编译
 4. 终端敲 `flash`
 

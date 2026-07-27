@@ -39,7 +39,6 @@ flash 工程名        # 指定工程名烧录
 | `[ERR] No .out found` | `.out` 不在预期路径 | 跑 `dir /s /b *.out` 看实际路径；把脚本放到工程根目录再跑 |
 | `unable to find CMSIS-DAP device` | DAPLink 没插或驱动没装 | 装 CH343 驱动；检查 USB 线 |
 | `SWD communication failure` | 接线松动或供电不足 | 核心板单独 Type-C 供电；重插杜邦线；按一下复位再试 |
-| LED 按键没反应 | 上下拉配反了 | 配置 `PULL_DOWN` 或反过来判断 `!= 0` |
 | `.\flash.bat` 找不到 | 当前目录没有脚本 | 把脚本目录加到 PATH，或 cd 到脚本所在目录再跑 |
 
 ## 其他提示
@@ -49,7 +48,7 @@ flash 工程名        # 指定工程名烧录
 - **脚本不带参数**时，自动从终端当前所在目录往下搜最新的 `.out`
 - 如果 `.out` 在 `项目根目录\Debug\` 下而不是 `项目根目录\工程名\Debug\` 下，脚本有备选路径能命中
 - 不需要环境变量也能用——cd 到脚本所在目录跑 `.\flash.bat 工程名` 一样行
-- 想要能打断点的调试模式？OpenOCD 自带 GDB Server（端口 3333），下期出教程~
+- 想要能打断点的调试模式？OpenOCD 自带 GDB Server（端口 3333），下期出教程哦~
 
 ## 视频教程
 

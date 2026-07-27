@@ -11,7 +11,7 @@ CCS Theia + DAPLink + OpenOCD 零元烧录 MSPM0G3507 最小核心板。
 | SWCLK | CLK |
 | SWDIO | DIO |
 
-核心板建议单独 Type-C 供电，DAPLink 只供信号和参考电压。
+
 
 ## 前提
 

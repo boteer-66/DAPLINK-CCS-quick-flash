@@ -27,7 +27,7 @@ for %%A in ("%OUTFILE%\..\..") do set "PROJECT=%%~nxA"
 :flash
 set "OUTFILE_UNIX=%OUTFILE:\=/%"
 echo ==== %PROJECT% ====
-D:\openocd\bin\openocd.exe -f interface/cmsis-dap.cfg -f target/ti/mspm0.cfg -c "adapter speed 4000" -c "program %OUTFILE_UNIX% verify reset exit"
+D:\openocd\bin\openocd.exe -f interface/cmsis-dap.cfg -f target/ti/mspm0.cfg -c "adapter speed 4000" -c "program %OUTFILE_UNIX%  reset exit"
 if %ERRORLEVEL% EQU 0 (
     echo [OK] Done
 ) else (

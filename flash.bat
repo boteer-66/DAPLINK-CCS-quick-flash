@@ -1,6 +1,6 @@
 @echo off
 set PROJECT=%1
-  
+   
 if "%PROJECT%"=="" (
     for /f "delims=" %%F in ('dir /s /b /o:-d "%CD%\*.out"') do (
         echo %%F | findstr "\\Debug\\" >nul
